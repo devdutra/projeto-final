@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+:root {
+  --amarelo: rgba(246, 250, 0, 0.856);
+  --fonte: "Play", sans-serif;
+}
+
+.hide2{
+  display: none;
+  
+  }
+  
+  .modalCadastrar{
+      cursor: pointer;
+  }
+
+.logo {
+  width: 150px;
+  margin: 20px 20px;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(34, 34, 34);
+  overflow-x: hidden;
+}
+
+.contato {
+  background-color: rgb(12, 12, 12);
+  height: 20vh;
+  color: var(--amarelo);
+  font-family: var(--fonte);
+}
+
+.contato i {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--amarelo);
+}
+
+a {
+  text-decoration: none;
+  color: var(--amarelo);
+}
+
+#search {
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+}
+
+header {
+  color: whitesmoke;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fonte);
+  height: 5vh;
+  margin-top: -5px;
+  height: 2.5rem;
+  gap: 3rem;
+}
+
+ul{
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: center;
+	text-align: center;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+	min-width: 80px;
+	margin: auto;
+}
+
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 var(--amarelo);
+	font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.shameless-plug{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  padding: 8px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.pesquisar {
+  width: 30%;
+  border-radius: 0.5rem;
+}
+
+.carousel-item {
+  height: 30rem;
+  background-size: contain;
+}
+
+
+
+
+
+/* Estilizando main principal */
+
+.containerConteudo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--amarelo);
+  }
+  
+  .containerConteudo h3{
+  background-color: #0c0c0c3b;
+  color: var(--amarelo);
+  font-size: 19px;
+  margin-top: -10vh;
+  text-align: center;
+  }
+
+  .cardinfo{
+    width: 20vw;
+  }
+
+
+.ps4 {
+  height: 100vh;
+  width: 100%;
+  background: url(img/fundo.webp);
+  background-size: cover;
+}
+
+.infoPs4 {
+  width: 50vw;
+  background-color: rgba(0, 22, 103, 0.356);
+  background: linear-gradient(
+    337deg,
+    rgba(0, 23, 103, 1) 0%,
+    rgba(33, 134, 223, 0.288) 100%
+  );
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-left: 45%;
+  padding: 3rem;
+  color: white;
+  gap: 2rem;
+  box-shadow: 3px 3px 15px 3px rgb(163, 163, 163);
+}
+
+.ps5 {
+  height: 100vh;
+  width: 100%;
+  background: url(img/ps5.jpg);
+  background-size: cover;
+}
+
+.infoPs5 {
+  width: 50vw;
+  background-color: rgba(0, 22, 103, 0.356);
+  background: linear-gradient(
+    337deg,
+    rgba(0, 23, 103, 1) 0%,
+    rgba(33, 134, 223, 0.288) 100%
+  );
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-left: 0%;
+  padding: 3rem;
+  color: white;
+  gap: 2rem;
+  box-shadow: 3px 3px 15px 3px rgb(163, 163, 163);
+}
+
+.containerJogos {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(66, 66, 66);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.catalogo {
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 32, 32, 0.623);
+}
+
+.imagens {
+  width: 100%;
+  height: 50vh;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+h3 {
+  color: #0c0c0c;
+  font-weight: bold;
+  background-color: var(--amarelo);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+/* Modal */
+
+#modal {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--amarelo);
+  width: 20vw;
+  height: 22vh;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px black;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
+}
+
+#modal .inputs {
+  font-family: var(--fonte);
+  display: flex;
+  padding: 1vh;
+}
+
+#modal .inputs input {
+  width: 100%;
+  margin-left: 2vw;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #0d0d0d;
+  outline: 0;
+
+}
+
+#modal label {
+  color: #0c0c0c;
+}
+
+.botaoEnviar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botaoEnviar button{
+  width: 10vw;
+  height: 4vh;
+  margin-top: 1rem;
+  border: 1px solid var(--amarelo);
+  background-color: rgb(104, 104, 104);
+  font-family: var(--fonte);
+  cursor: pointer;
+  border-radius: 2px;
+  color: var(--amarelo);
+}
+
+#fade,
+#modal {
+  opacity: 1;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #30303033;
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+#abrirModal {
+  cursor: pointer;
+}
+
+
+#pesquisarMobile {
+  display: none;
+}
+#iconeMenu {
+  display: none;
+}
+#container,
+#container1 {
+  display: none;
+}
+
+#container,
+#container1 {
+  opacity: 1;
+}
+
+#container.hide,
+#container1.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+/* Personalização página Ps4 */
+
+#btnAlugar:hover {
+  background-color: green;
+  font-weight: bold;
+  padding: 1vh 2vw;
+}
+
+.catalogo {
+  padding-top: 2rem;
+}
+
+h2 {
+  background-color: var(--amarelo);
+  color: #303030;
+  padding: 10px;
+}
+
+/* Aplicação das medidas adaptativas */
+
+@media screen and (max-width: 600px) {
+  #menuBotoes {
+    display: none;
+  }
+  #itemMenuMobile {
+    display: none;
+  }
+
+  #pesquisarMobile {
+    margin: 1vh 20vh auto;
+    margin-bottom: 2rem;
+    display: block;
+    width: 160vw;
+    height: 2vh;
+  }
+
+  .divImagem {
+    position: absolute;
+    left: 0;
+  }
+
+  .div-login {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+  }
+}

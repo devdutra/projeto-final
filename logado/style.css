@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+:root {
+  --amarelo: rgba(246, 250, 0, 0.856);
+  --back:  rgb(34, 34, 34)
+  --fonte: "Play", sans-serif;
+}
+
+.hide2 {
+  display: none;
+}
+
+.modalCadastrar {
+  cursor: pointer;
+}
+
+.logo {
+  width: 150px;
+  margin: 20px 20px;
+}
+
+.contato {
+  background-color: rgb(12, 12, 12);
+  height: 20vh;
+  color: var(--amarelo);
+  font-family: var(--fonte);
+}
+
+.contato i {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--amarelo);
+}
+
+a {
+  text-decoration: none;
+  color: var(--amarelo);
+}
+
+#search {
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+}
+
+header {
+  color: whitesmoke;
+}
+
+#itemMenuMobile {
+  position: relative;
+  cursor: pointer;
+}
+#qtdItens:empty {
+  display: none;
+}
+
+#valorTotal:empty {
+  display: none;
+}
+#qtdItens {
+  background-color: var(--amarelo);
+  border-radius: 100%;
+  padding: 0.4vh 0.4vw;
+  color: #303030;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+  top: -12px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fonte);
+  height: 5vh;
+  margin-top: -5px;
+  height: 2.5rem;
+  gap: 3rem;
+}
+
+.pesquisar {
+  width: 30%;
+  border-radius: 0.5rem;
+}
+
+.carousel-item {
+  height: 30rem;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cards {
+  color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px;
+  width: 200px;
+}
+
+.cards:hover {
+  box-shadow: 1px 1px 15px var(--amarelo);
+}
+.cards img {
+  width: 200px;
+}
+
+.container button {
+  width: 8vw;
+  height: 4vh;
+  border: 1px solid var(--amarelo);
+  background-color: rgb(104, 104, 104);
+  font-family: var(--fonte);
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--amarelo);
+  margin-bottom: 2vh;
+}
+
+.cards h7{
+  color: green;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.cards span{
+  color: green;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.ajudaSenhor{
+display: flex;
+flex-direction: column;
+}
+
+#removerDoCarrinho{
+  border-radius: 100px;
+  padding: 4px;
+  background-color: var(--amarelo);
+  font-size: 10px; 
+}
+
+.CardModal{
+  border: .5px solid rgb(90, 90, 95);
+  margin-bottom: 5px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 10px 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5px;  
+}
+
+.CardModal:hover{
+  box-shadow: 2px 2px 10px rgba(34, 34, 100, 0.623);
+  transition: 100ms;
+}
+
+
+
+/* Modal */
+
+#modal {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--amarelo);
+  width: 45vw;
+  height: 50%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px black;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
+  font-family: var(--fonte);
+}
+
+.inputQtd {
+  border: 0;
+  border-bottom: 1px solid #303030;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+#modal input {
+  font-family: var(--fonte);
+  padding: 1vh;
+  background-color: #3030307c;
+  color: white;
+  border-style: none;
+  text-align: end;
+  border-bottom: 1px dotted rgb(0, 143, 19);
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 2vh;
+}
+
+#modal .inputs input {
+  width: 100%;
+  margin-left: 2vw;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #0d0d0d;
+  outline: 0;
+}
+
+#modal p {
+  color: #0c0c0c;
+}
+
+.botaoEnviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botaoEnviar button {
+  width: 10vw;
+  height: 4vh;
+  margin-top: 1rem;
+  border: 1px solid var(--amarelo);
+  background-color: rgb(104, 104, 104);
+  font-family: var(--fonte);
+  cursor: pointer;
+  border-radius: 2px;
+  color: var(--amarelo);
+}
+
+#fade,
+#modal {
+  opacity: 1;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #30303033;
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#abrirModal {
+  cursor: pointer;
+}
+
+#pesquisarMobile {
+  display: none;
+}
+#iconeMenu {
+  display: none;
+}
+#container,
+#container1 {
+  display: none;
+}
+
+#container,
+#container1 {
+  opacity: 1;
+}
+
+#container.hide,
+#container1.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+/* Personalização página Ps4 */
+
+#btnAlugar:hover {
+  background-color: green;
+  font-weight: bold;
+  padding: 1vh 2vw;
+}
+
+.catalogo {
+  padding-top: 2rem;
+}
+
+h2 {
+  background-color: var(--amarelo);
+  color: #303030;
+  padding: 10px;
+}
+
+/* Aplicação das medidas adaptativas */
+
+@media screen and (max-width: 600px) {
+  #menuBotoes {
+    display: none;
+  }
+  #itemMenuMobile {
+    display: none;
+  }
+
+  #pesquisarMobile {
+    margin: 1vh 20vh auto;
+    margin-bottom: 2rem;
+    display: block;
+    width: 160vw;
+    height: 2vh;
+  }
+
+  .divImagem {
+    position: absolute;
+    left: 0;
+  }
+
+  .div-login {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+  }
+}
